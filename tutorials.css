@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500&family=Expletus+Sans:ital,wght@0,400;0,600;1,400&family=Poppins:wght@100;200;300;400;500;600&family=Roboto+Condensed:wght@300;400&family=Roboto+Flex:opsz,wght@8..144,300;8..144,400&family=Sansita+Swashed:wght@500;600&family=Spline+Sans+Mono:ital,wght@0,300;0,400;0,600;1,300;1,500&family=Ubuntu+Condensed&family=Ubuntu:wght@300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: poppins, "sans-serif";
+}
+body {
+  background-color: rgb(216, 206, 206);
+}
+
+h2 {
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  background-color: white;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  height: 100%;
+  background-color: white;
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 3;
+  height: 100%;
+  background-color: #ffff;
+}
+
+li,
+ul,
+a {
+  text-decoration: none;
+  display: inline;
+  list-style: none;
+  padding: 10px;
+  color: crimson;
+  font-weight: bold;
+}
+
+/* CSS rules for small screens (up to 767px) */
+@media screen and (max-width: 767px) {
+  /* Your CSS rules for small screens go here */
+  a:hover {
+    color: rgb(34, 96, 85);
+    transition: ease-in-out 3s;
+  }
+  ul {
+    display: none;
+  }
+}
+
+/* CSS rules for medium screens (768px to 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Your CSS rules for medium screens go here */
+  a:hover {
+    color: rgb(28, 72, 16);
+    transition: ease-in-out 3s;
+  }
+}
+
+/* CSS rules for large screens (1024px and above) */
+@media screen and (min-width: 1024px) {
+  /* Your CSS rules for large screens go here */
+  a:hover {
+    color: rgb(22, 22, 171);
+    transition: ease-in-out 3s;
+  }
+}
